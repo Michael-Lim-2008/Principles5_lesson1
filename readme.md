@@ -18,6 +18,12 @@ Your objective is to survive as long as possible - by dodging the bullet asteroi
 
 'w' + 'd' or up arrow and right arrow = up right
 
+'w' + 'a' or up and left arrow = up left
+
+'s' + 'd' or down and right arrow = down right
+
+'s' + 'a' or down and left arrow = down left
+
 ## Details
 - 3 lives
 - upgrades
