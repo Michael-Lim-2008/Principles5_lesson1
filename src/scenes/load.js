@@ -10,11 +10,11 @@ export class Load extends Scene {
         })
     }
     preload() {
-        console.log("loading")
-        this.load.image("player","./src/assets/kenney_platformercharacters/PNG/Player/Poses/player_walk2.png")
-        this.load.image("Background","./src/assets/background.jpeg")
-       
-        this.load.atlasXML("rts","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.png","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.xml")
+        // console.log("loading")
+        this.load.image("player","./src/assets/player.png")
+        // this.load.image("Background","./src/assets/background.jpeg")
+        this.load.image("asteroid","./src/assets/asteroid3.png")
+        // this.load.atlasXML("rts","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.png","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.xml")
 
     }
 

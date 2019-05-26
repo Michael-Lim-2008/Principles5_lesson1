@@ -8,19 +8,40 @@ export class Enemy extends GameObjects.Sprite {
         config.scene.add.existing(this)
         this.x = config.x
         this.y = config.y
-        this.setOrigin(0,0)
-        this.displayWidth = 70
-        this.displayHeight = 100
-
+        this.xspeed = (Math.random()+1)*10
+        this.yspeed = (Math.random()+1)*10
+        this.active = true
+        console.log(this)
+        this.screen_height = config.scene.scale.baseSize._height
+        this.screen_width = config.scene.scale.baseSize._width
+        
     }
 
 
     update(time,delta){
-        this.move(time)
+        if (this.active) {
+            if (this.x > this.screen_width){
+                this.x = 0
+                
+            }else if (this.x < 0 ){
+                this.x = this.screen_width
+                
+            }
+
+
+            if (this.y > this.screen_height) {
+                this.y = 0
+                
+            }else if (this.y  < 0 ){
+                this.y = this.screen_height
+                
+            }
+
+            this.x += this.xspeed
+            this.y += this.yspeed
     }
 
-    move(time){
-        this.x = Math.sin(time*0.005) * 100
-        this.y = Math.cos(time*0.005) * 100
-    }
+    
+}
+
 }
