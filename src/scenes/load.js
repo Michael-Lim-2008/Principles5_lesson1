@@ -13,7 +13,7 @@ export class Load extends Scene {
         // console.log("loading")
         this.load.image("player","./src/assets/player.png")
         // this.load.image("Background","./src/assets/background.jpeg")
-        this.load.image("asteroid","./src/assets/asteroid3.png")
+        this.load.image("asteroid","./src/assets/kenney_rtssci-fi/PNG/Default size/Environment/scifiEnvironment_03.png")
         // this.load.atlasXML("rts","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.png","src/assets/kenney_rtssci-fi/Spritesheet/scifiRTS_spritesheet.xml")
 
     }

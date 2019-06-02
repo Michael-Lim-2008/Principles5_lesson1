@@ -6,8 +6,11 @@ export class Enemy extends GameObjects.Sprite {
         super(config.scene, config.x, config.y , config.texture)
         config.scene.physics.world.enable(this)
         config.scene.add.existing(this)
+        this.setAlpha(1)
         this.x = config.x
         this.y = config.y
+        this.displayWidth=config.width
+        this.displayHeight=config.height
         this.xspeed = (Math.random()+1)*10
         this.yspeed = (Math.random()+1)*10
         this.active = true

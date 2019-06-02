@@ -37,10 +37,21 @@ export class Game extends Scene {
         this.spriteGroup = this.add.group()
         this.spriteGroup.add(new Enemy({
             scene: this,
-            x: -10,
+            x: 100,
             y: 200,
-            texture: "player"
+            texture: "player",
+            width: 125,
+            height: 150,
         }) )
+
+        this.spriteGroup.add(new Enemy({
+            scene: this,
+            x:250,
+            y: 400,
+            texture: "asteroid",
+            width: 100,
+            height: 100,
+        }))
 
     }
 

@@ -6,7 +6,8 @@ const config = {
   type: Phaser.AUTO,
   width: window.innerWidth,
   height: window.innerHeight,
-  scene: [Load, Game]
+  scene: [Load, Game],
+  
     
 };
 
